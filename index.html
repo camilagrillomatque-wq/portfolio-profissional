@@ -3,270 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camila | Portfólio</title>
-  <meta name="description" content="Portfólio profissional de Camila.">
-  <style>
-    :root {
-      --bg: #fafafa;
-      --surface: #ffffff;
-      --text: #1f2933;
-      --muted: #616e7c;
-      --accent: #2563eb;
-      --border: #e4e7eb;
-      --max: 960px;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #111418;
-        --surface: #1a1f25;
-        --text: #e4e7eb;
-        --muted: #9aa5b1;
-        --accent: #60a5fa;
-        --border: #2a313a;
-      }
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container {
-      width: 100%;
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 0 1.25rem;
-    }
-
-    /* Cabeçalho */
-    header {
-      position: sticky;
-      top: 0;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      z-index: 10;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      padding: 1rem 0;
-    }
-
-    .logo { font-weight: 700; color: var(--text); }
-
-    nav ul {
-      display: flex;
-      gap: 1.25rem;
-      list-style: none;
-    }
-
-    nav ul a { color: var(--muted); font-size: 0.95rem; }
-    nav ul a:hover { color: var(--accent); text-decoration: none; }
-
-    /* Apresentação */
-    .hero {
-      padding: 5rem 0 4rem;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 6vw, 3.25rem);
-      line-height: 1.15;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.15rem;
-      color: var(--muted);
-      max-width: 40rem;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
-      background: var(--accent);
-      color: #fff;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-    .btn:hover { text-decoration: none; opacity: 0.9; }
-
-    /* Seções */
-    section { padding: 3.5rem 0; border-top: 1px solid var(--border); }
-
-    section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 1.25rem;
-    }
-
-    section > .container > p { color: var(--muted); max-width: 42rem; }
-    section > .container > p + .grid { margin-top: 1.25rem; }
-
-    /* Projetos */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.25rem;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .card h3 { font-size: 1.1rem; }
-    .card p { color: var(--muted); font-size: 0.95rem; flex: 1; }
-
-    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .tags span {
-      font-size: 0.8rem;
-      padding: 0.15rem 0.6rem;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-    }
-
-    /* Contato */
-    .contact-list {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem 2rem;
-      margin-top: 1.25rem;
-    }
-
-    footer {
-      padding: 2rem 0;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      nav { justify-content: center; }
-      .hero { padding: 3.5rem 0 3rem; text-align: center; }
-      .hero p { margin: 0 auto; }
-    }
-  </style>
+  <title>Camila Grillo</title>
+  <meta name="description" content="Portfólio de Camila Grillo.">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <nav>
-        <a href="#" class="logo">Camila</a>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="site-header">
+    <span></span>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li class="has-sub">
+          <button type="button" aria-expanded="false" aria-haspopup="true">trabalhos ▾</button>
+          <ul class="submenu">
+            <li><a href="trabalhos-clientes/">trabalhos para clientes</a></li>
+            <li><a href="trabalhos-pessoais/">trabalhos pessoais</a></li>
+            <li><a href="exposicoes/">exposições</a></li>
+          </ul>
+        </li>
+        <li><a href="sobre/">sobre</a></li>
+        <li><a href="contato/">contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <div class="hero">
-      <div class="container">
-        <h1>Olá, eu sou a Camila.</h1>
-        <p>Desenvolvedora apaixonada por criar soluções simples, bem pensadas e úteis para as pessoas.</p>
-        <a href="#projetos" class="btn">Ver projetos</a>
-      </div>
-    </div>
+  <main class="landing">
+    <!-- Elementos visuais da entrada (imagens, ilustrações, animações) entram aqui -->
+    <div class="landing-visuals" aria-hidden="true"></div>
 
-    <section id="sobre">
-      <div class="container">
-        <h2>Sobre</h2>
-        <p>Sou uma profissional que gosta de transformar ideias em produtos funcionais. Tenho interesse em desenvolvimento web, boas práticas de código e aprendizado contínuo. Aqui você pode contar um pouco da sua trajetória, formação e o que te motiva.</p>
-      </div>
-    </section>
-
-    <section id="formacao">
-      <div class="container">
-        <h2>Formação</h2>
-        <p>Um resumo da sua trajetória acadêmica e dos cursos que complementam sua experiência.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>Nome do Curso de Graduação</h3>
-            <p>Nome da Instituição — breve descrição do curso, ênfase ou trabalho de conclusão.</p>
-            <div class="tags"><span>2019 – 2023</span><span>Graduação</span></div>
-          </article>
-          <article class="card">
-            <h3>Nome do Curso Complementar</h3>
-            <p>Nome da Instituição ou plataforma — o que você aprendeu e como aplica no dia a dia.</p>
-            <div class="tags"><span>2024</span><span>Curso livre</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projetos">
-      <div class="container">
-        <h2>Projetos</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Projeto Um</h3>
-            <p>Breve descrição do projeto, do problema que ele resolve e do seu papel nele.</p>
-            <div class="tags"><span>HTML</span><span>CSS</span></div>
-            <a href="#">Ver projeto →</a>
-          </article>
-          <article class="card">
-            <h3>Projeto Dois</h3>
-            <p>Breve descrição do projeto, do problema que ele resolve e do seu papel nele.</p>
-            <div class="tags"><span>JavaScript</span><span>API</span></div>
-            <a href="#">Ver projeto →</a>
-          </article>
-          <article class="card">
-            <h3>Projeto Três</h3>
-            <p>Breve descrição do projeto, do problema que ele resolve e do seu papel nele.</p>
-            <div class="tags"><span>Python</span><span>Dados</span></div>
-            <a href="#">Ver projeto →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato">
-      <div class="container">
-        <h2>Contato</h2>
-        <p>Quer conversar sobre uma oportunidade ou projeto? Fique à vontade para entrar em contato.</p>
-        <ul class="contact-list">
-          <li><a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
-      </div>
-    </section>
+    <h1 class="landing-name">Camila Grillo</h1>
   </main>
 
-  <footer>
-    <div class="container">
-      &copy; <span id="ano"></span> Camila. Todos os direitos reservados.
-    </div>
+  <footer class="site-footer">
+    <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a>
+    <span>&copy; Camila Grillo · <span data-ano></span></span>
   </footer>
 
-  <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-  </script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
