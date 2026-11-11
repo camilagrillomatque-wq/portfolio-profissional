@@ -10,34 +10,58 @@
 <body>
 
   <header class="site-header">
-    <span></span>
-    <nav aria-label="Menu principal">
+    <a href="./" class="home-link">Camila Grillo</a>
+    <nav aria-label="Áreas de conhecimento">
       <ul class="menu">
-        <li class="has-sub">
-          <button type="button" aria-expanded="false" aria-haspopup="true">trabalhos ▾</button>
-          <ul class="submenu">
-            <li><a href="trabalhos-clientes/">trabalhos para clientes</a></li>
-            <li><a href="trabalhos-pessoais/">trabalhos pessoais</a></li>
-            <li><a href="exposicoes/">exposições</a></li>
-          </ul>
-        </li>
-        <li><a href="sobre/">sobre</a></li>
-        <li><a href="contato/">contato</a></li>
+        <li><a href="area-1/">Área 1</a></li>
+        <li><a href="area-2/">Área 2</a></li>
+        <li><a href="area-3/">Área 3</a></li>
+        <li><a href="area-4/">Área 4</a></li>
+        <li><a href="area-5/">Área 5</a></li>
       </ul>
     </nav>
+    <a href="contato/" class="contact-link" aria-label="Contato">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
   </header>
 
-  <main class="landing">
-    <!-- Elementos visuais da entrada (imagens, ilustrações, animações) entram aqui -->
-    <div class="landing-visuals" aria-hidden="true"></div>
+  <main>
+    <!-- Primeira tela: nome no centro -->
+    <section class="hero">
+      <!-- Elementos visuais da entrada (imagens, ilustrações, animações) entram aqui -->
+      <div class="hero-visuals" aria-hidden="true"></div>
+      <h1 class="hero-name">Camila Grillo</h1>
+      <a class="scroll-hint" href="#areas">role para baixo ↓</a>
+    </section>
 
-    <h1 class="landing-name">Camila Grillo</h1>
+    <!-- Ao rolar: os 5 retângulos, um para cada área -->
+    <section class="areas" id="areas" aria-label="Áreas de conhecimento">
+      <div class="areas-grid">
+      <a class="area-card" href="area-1/">
+        <h2>Área 1</h2>
+        <span>ver projetos →</span>
+      </a>
+      <a class="area-card" href="area-2/">
+        <h2>Área 2</h2>
+        <span>ver projetos →</span>
+      </a>
+      <a class="area-card" href="area-3/">
+        <h2>Área 3</h2>
+        <span>ver projetos →</span>
+      </a>
+      <a class="area-card" href="area-4/">
+        <h2>Área 4</h2>
+        <span>ver projetos →</span>
+      </a>
+      <a class="area-card" href="area-5/">
+        <h2>Área 5</h2>
+        <span>ver projetos →</span>
+      </a>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a>
-    <span>&copy; Camila Grillo · <span data-ano></span></span>
-  </footer>
+  <footer class="site-footer">&copy; Camila Grillo · <span data-ano></span></footer>
 
   <script src="assets/main.js"></script>
 </body>
